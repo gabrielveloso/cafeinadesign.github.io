@@ -70,12 +70,27 @@ hr.star-primary:after {
 .img-centered {
 	margin: 0 auto;
 }
+.redondo {
+    width: 200px;
+    height: 200px;
+    color: #FFF;
+    background-image: url("../img/gava.png");  
+    background-position: center top; 
+    //background-color: #fff;
+   
+    
+    border-radius: 50%;
+}
+
+.lista ul li{
+    font-size: 1.2em;
+}
 
 header {
 	text-align: center;
 	background: @theme-success;
 	color: white;
-	background-image: url("../img/portfolio/cafe4.jpg");
+	background-color: #3c3c3c;
 	position: relative;
 	.container {
 		padding-top: 100px;
@@ -100,16 +115,27 @@ header {
 	}
 }
 
+@media(max-width:768px) {
+ .redondo {
+    width: 200px;
+    height: 200px;
+    color: #FFF;
+    background-image: url("../img/gava.png"); 
+    margin: 0px auto;    
+    border-radius: 50%;
+}   
+}
+
 @media(min-width:435px) {
 	header {
-		background-image: url("../img/portfolio/cafe3.jpg");
+		
 		.container {
 			padding-top: 200px;
 			padding-bottom: 100px;
 		}
 		.intro-text {
 			.name {
-				font-size: 4.75em;
+				font-size: 3.0em;
 			}
 			.skills {
 				font-size: 1.75em;
