@@ -112,6 +112,14 @@ header .intro-text .skills {
     margin: 0px auto;
     border-radius: 50%;
   }
+  div.row.lista div h3 {
+    text-align: center;
+  }
+  div.row.lista div ul {
+    padding: 0px 0px;
+    list-style-type: none;
+    text-align: center;
+  }
 }
 @media (min-width: 435px) {
   header .container {
