@@ -74,6 +74,9 @@ hr.star-primary:after {
   background-position: center top;
   border-radius: 50%;
 }
+ul {
+  padding: 0px 0px;
+}
 .lista ul li {
   font-size: 1.2em;
 }
@@ -103,6 +106,71 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+.fa-2x {
+  margin-top: 10px;
+}
+#social {
+  margin-top: 4.6875rem;
+  text-align: center;
+}
+.social__item {
+  color: white;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.button:hover:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+}
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+}
+a:focus {
+  color: #fff;
+}
+.button1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 768px) {
   .redondo {
     width: 200px;
@@ -116,7 +184,6 @@ header .intro-text .skills {
     text-align: center;
   }
   div.row.lista div ul {
-    padding: 0px 0px;
     list-style-type: none;
     text-align: center;
   }
