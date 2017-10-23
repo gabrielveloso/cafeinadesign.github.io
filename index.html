@@ -93,22 +93,25 @@ $('#portfolio').each(function(){
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
-                <div class="row">
-                    <div  class="col-md-12" style="margin-bottom: 30px" > 
+                <div class="col-sm-4">
+                    <div  style="margin-bottom: 30px" > 
                         <div class="redondo" >
                         </div>
                     </div>
                 </div>   
-                     <div>
-                       <img class="curriculum" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
-                    </div>
+                 <div class="col-sm-12" style="margin-top: 30px">
+                   <a href="CV.pdf">
+                     <img class="curriculum" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
+                   </a>
+                </div>
+                
             </div>  
                 <div class="col-md-12">
                     <div class="intro-text">
                         <h2 class="name">Desenvolvedor Web & Mobile</h2>                        
                         <hr class="star-light">
                     </div>
-                
+                    
                     <ul id="social">
                         <li class="social__item">
                             <a target="_blank" href="https://www.facebook.com/gabriel.azuirson" title="Facebook" class="button">
@@ -130,6 +133,7 @@ $('#portfolio').each(function(){
                         </li> 
                     </ul>                    
                    
+              
                     <div style="display: none">
                        <p > Sou formado em Egenharia da Computação na UFPE, onde atuamente trabalho como Analista de Sistemas. Possuo especialização em Segurança da Informação pela CESAR/Faculdade Marista e Mestrado na UFPE na Área de Inteligência artifical (Sistemas de Recomendação)</p> 
                     </div>
@@ -650,6 +654,44 @@ $('#portfolio').each(function(){
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="curriculo" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Detran al mobile</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/detranal.png" class="img-responsive img-centered" alt="">
+                            <p>Aplicativos de consulta de débitos, multas e pontos na CNH do DETRAN-AL</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Qualquer</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">Setembro 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="https://play.google.com/store/apps/details?id=br.com.detranalmobile">Google Play</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
