@@ -25,6 +25,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +49,32 @@ $('#portfolio').each(function(){
 
     }); 
 }); 
-});
+
+// hide our element on page load
+
+/*
+$('#ufpeid').waypoint(function() {
+  $('#ufpeid').addClass('animated zoomInUp');
+}, { offset: '110%' });
+ 
+
+$('#ru').waypoint(function() {
+  $('#ru').addClass('animated zoomInUp');
+}, { offset: '110%' });
+    
+
+    
+$('#mobile1').waypoint(function() {
+  $('#mobile1').addClass('animated zoomInUp');
+}, { offset: '110%' });
+
+
+$('#mobile2').waypoint(function() {
+  $('#mobile2').addClass('animated zoomInUp');
+}, { offset: '110%' });
+
+});*/
+
 </script>
 
 
@@ -97,13 +123,14 @@ $('#portfolio').each(function(){
             <div class="row">
                 <div class="col-sm-4">
                     <div  style="margin-bottom: 30px" > 
+                        <!--<img src="/img/gava.png" alt="..." class="img-circle animated bounceInLeft">-->
                         <div class="redondo animated bounceInLeft" >
                         </div>
                     </div>
                 </div>   
                  <div class="col-sm-12" style="margin-top: 30px">
                    <a href="CV.pdf">
-                     <img class="curriculum animated bounceInUp" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
+                     <img class="curriculum animated zoomInUp" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
                    </a>
                 </div>
                 
@@ -222,14 +249,14 @@ $('#portfolio').each(function(){
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 portfolio-item">
+                <div id="ufpeid" class="col-sm-6 portfolio-item">
                     <a href="#ufpeid" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/ufpeid.png" class="img-responsive" alt="UFPE ID">
+                        <img  src="img/portfolio/ufpeid.png" class="img-responsive" alt="UFPE ID">
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
@@ -239,7 +266,7 @@ $('#portfolio').each(function(){
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/ru.png" class="img-responsive" alt="UR">
+                        <img id="ru" src="img/portfolio/ru.png" class="img-responsive" alt="UR">
                     </a>
                 </div>
              
@@ -253,7 +280,7 @@ $('#portfolio').each(function(){
                     <hr class="star-secundary">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="mobile1">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -286,7 +313,7 @@ $('#portfolio').each(function(){
                 </div>
                
             </div>
-             <div class="row">
+             <div class="row" id="mobile2">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -778,6 +805,8 @@ $('#portfolio').each(function(){
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
 
 </body>
 
