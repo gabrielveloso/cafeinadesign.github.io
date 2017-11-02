@@ -21,6 +21,8 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+     <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
@@ -95,13 +97,13 @@ $('#portfolio').each(function(){
             <div class="row">
                 <div class="col-sm-4">
                     <div  style="margin-bottom: 30px" > 
-                        <div class="redondo" >
+                        <div class="redondo animated bounceInLeft" >
                         </div>
                     </div>
                 </div>   
                  <div class="col-sm-12" style="margin-top: 30px">
                    <a href="CV.pdf">
-                     <img class="curriculum" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
+                     <img class="curriculum animated bounceInUp" src="https://cdn3.iconfinder.com/data/icons/human-resources-management/512/cv_curriculum_portfolio_folio-512.png">
                    </a>
                 </div>
                 
@@ -209,6 +211,46 @@ $('#portfolio').each(function(){
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
                     <hr class="star-primary">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                    <h3 style="color: #fcfcfc">Projetos Web</h3>
+                    <hr class="star-secundary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#ufpeid" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ufpeid.png" class="img-responsive" alt="UFPE ID">
+                    </a>
+                </div>
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#ru" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ru.png" class="img-responsive" alt="UR">
+                    </a>
+                </div>
+             
+            </div>
+            <br>
+            <br>
+             <div class="row">
+                <div class="col-lg-12 text-center">
+                     
+                    <h3 style="color: #fcfcfc">Projetos Mobile</h3>
+                    <hr class="star-secundary">
                 </div>
             </div>
             <div class="row">
@@ -654,7 +696,7 @@ $('#portfolio').each(function(){
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="curriculo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="ufpeid" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -664,25 +706,22 @@ $('#portfolio').each(function(){
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-12">
                         <div class="modal-body">
-                            <h2>Detran al mobile</h2>
+                            <h2>UFPE ID</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/detranal.png" class="img-responsive img-centered" alt="">
-                            <p>Aplicativos de consulta de débitos, multas e pontos na CNH do DETRAN-AL</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Qualquer</a>
-                                    </strong>
-                                </li>
+                            <img src="img/portfolio/ufpeid1.png" class="img-responsive img-centered" alt="">                           
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="modal-body">                           
+                            <img src="img/portfolio/ufpeid2.png" class="img-responsive img-centered" alt="">
+                            <p>Aplicação de login único nos serviços da UFPE</p>
+                            <ul class="list-inline item-details">                               
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">Setembro 2016</a>
+                                    <strong><a href="http://startbootstrap.com">Janeiro 2017</a>
                                     </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="https://play.google.com/store/apps/details?id=br.com.detranalmobile">Google Play</a>
-                                    </strong>
-                                </li>
+                                </li>                                
                             </ul>
                             <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -691,6 +730,37 @@ $('#portfolio').each(function(){
             </div>
         </div>
     </div>
+     <div class="portfolio-modal modal fade" id="ru" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="modal-body">
+                                <h2>Restaurante Universitário</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/ru1.png" class="img-responsive img-centered" alt="">  
+                                <p>Aplicação modelo para validação de uma Arquitetura</p>
+                                <ul class="list-inline item-details">                               
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">Janeiro 2017</a>
+                                        </strong>
+                                    </li>                                
+                                </ul>
+                                <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
 
 
     <!-- jQuery -->
