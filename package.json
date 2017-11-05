@@ -27,6 +27,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
   },
   "dependencies": {
+    "i18next": "^10.0.7",
     "once": "^1.4.0"
   }
 }

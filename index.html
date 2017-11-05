@@ -36,6 +36,7 @@
 
 <script type="text/javascript">
 
+    
 $(document).ready(function(){
 $('#portfolio').each(function(){
     var $obj = $(this);
@@ -73,8 +74,44 @@ $('#mobile2').waypoint(function() {
   $('#mobile2').addClass('animated zoomInUp');
 }, { offset: '110%' });
 */
-});
     
+
+    
+});
+ /*   
+i18next.init({
+  lng: 'en',
+  debug: true,
+  resources: {
+    en: {
+      translation: {
+        "key": "hello world"
+      }
+    },
+    de: {
+      translation: {
+        "key": "hello welt"
+      }
+    }
+  }
+}, function(err, t) {
+  // init set content
+  updateContent();
+});
+
+function updateContent() {
+  document.getElementById('cargo').innerHTML = i18next.t('key');
+}
+
+function changeLng(lng) {
+  i18next.changeLanguage(lng);
+}
+
+i18next.on('languageChanged', () => {
+  updateContent();
+    alert("teste");
+});
+  */  
 
 
 </script>
@@ -139,7 +176,7 @@ $('#mobile2').waypoint(function() {
             </div>  
                 <div class="col-md-12">
                     <div class="intro-text">
-                        <h2 class="name">Desenvolvedor Web & Mobile</h2>                        
+                        <h2 id="cargo" class="name">Desenvolvedor Web & Mobile</h2>                        
                         <hr class="star-light">
                     </div>
                     
